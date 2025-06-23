@@ -4,16 +4,14 @@ declare(strict_types=1);
 
 namespace App\Models;
 
-use App\Traits\Models\Scopes\HasStatusScope;
-use Illuminate\Database\Eloquent\Model;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Organization extends Model
 {
-    use HasStatusScope;
+
     use SoftDeletes;
 
     protected $fillable = [
